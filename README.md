@@ -12,7 +12,7 @@ Build a classification model to predict whether a passenger survived the Titanic
 - Other features
 
 ## 🧠 Concepts Used
-- Logistic Regression (Binary Classification)
+- Logistic Regression (Binary Classification )
 - Data Preprocessing & Feature Engineering
 - Categorical Encoding
 - Model Evaluation (Accuracy, Precision, Recall)
