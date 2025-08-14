@@ -36,4 +36,4 @@ Achieved model accuracy around ~78% using basic logistic regression (no hyperpar
 ## 🧪 Future Work
 - Try other classifiers (Random Forest, SVM)
 - Apply cross-validation
-- Perform hyperparameter tuning
+- Perform hyperparameter tuning .
