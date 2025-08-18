@@ -1,39 +1,53 @@
-# titanic_logistic
-# Titanic Survival Prediction – Logistic Regression 🛳️
+# Titanic Survival Prediction — Logistic Regression & KNN
 
-This project applies Logistic Regression to predict survival outcomes on the Titanic dataset.
+A comprehensive project using the Kaggle Titanic dataset to explore and compare classification models: **Logistic Regression** and **K-Nearest Neighbors (KNN)**.
 
-## 📊 Objective
-Build a classification model to predict whether a passenger survived the Titanic disaster using:
-- Gender
-- Passenger class
-- Age
-- Embarkation port
-- Other features
+---
 
-## 🧠 Concepts Used
-- Logistic Regression (Binary Classification )
-- Data Preprocessing & Feature Engineering
-- Categorical Encoding
-- Model Evaluation (Accuracy, Precision, Recall)
+##  Objective
 
-## 📁 Dataset
-Kaggle Titanic Dataset: [https://www.kaggle.com/c/titanic/data](https://www.kaggle.com/c/titanic/data)
+Build and evaluate models to predict Titanic passenger survival using features such as:
 
-Use the `train.csv` file to build the model.
+- Passenger class (`Pclass`)
+- Gender (`Sex`)
+- Age (`Age`)
+- Port of Embarkation (`Embarked`)
+- Other engineered or selected features
 
-## 🔍 Key Steps
-- Data Cleaning
-- EDA
-- Handling Missing Values
-- Encoding Categorical Variables
-- Training Logistic Regression
-- Model Evaluation
+---
 
-## 📈 Final Accuracy
-Achieved model accuracy around ~78% using basic logistic regression (no hyperparameter tuning).
+##  Concepts & Techniques
 
-## 🧪 Future Work
-- Try other classifiers (Random Forest, SVM)
-- Apply cross-validation
-- Perform hyperparameter tuning .
+- Models:
+  - **Logistic Regression** (`sklearn.linear_model.LogisticRegression`)
+  - **KNN** (`sklearn.neighbors.KNeighborsClassifier`)
+- Data preprocessing:
+  - Missing value handling (e.g., `Age`, `Embarked`)
+  - Dropping irrelevant columns (`Name`, `Ticket`, `Cabin`)
+  - Encoding categorical variables (`Sex`, `Embarked`)
+  - Optional feature scaling for KNN (e.g., `StandardScaler`)
+- Model evaluation:
+  - Accuracy
+  - Confusion matrix
+  - Classification report (Precision, Recall, F1-score)
+
+---
+
+##  Dataset
+
+- **Source**: Kaggle Titanic Dataset ([link](https://www.kaggle.com/c/titanic/data))  
+- **File**: `train.csv` — place this in the project root before running notebooks.
+
+---
+
+##  Project Structure
+
+```text
+.
+├── README.md
+├── train.csv                                 # Titanic dataset (must be added)
+├── titanic_logistic.ipynb                    # Logistic Regression notebook
+├── titanic_logistic2.ipynb                   # Variant or extended pipeline
+├── titanic_knn.ipynb                         # KNN classification notebook
+└── Titanic Survival Prediction (Logistic Regression + KNN).ipynb
+     Combined notebook comparing both models
